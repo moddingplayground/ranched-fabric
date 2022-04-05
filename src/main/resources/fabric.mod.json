@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+
+  "id": "ranched",
+  "version": "${version}",
+  "license": [
+    "MIT (Code)",
+    "All Rights Reserved (Assets)"
+  ],
+
+  "name": "Example",
+  "icon": "assets/ranched/icon.png",
+  "description": "A mod that encourages better care of your animals!",
+
+  "authors": [
+    "Gaetano Russo (Ninni)",
+    "Daniel Orr (Andante)"
+  ],
+  "contact": {
+    "homepage": "https://moddingplayground.net/ranched",
+    "sources": "https://github.com/moddingplayground/ranched-fabric",
+    "issues": "https://github.com/moddingplayground/ranched-fabric/issues"
+  },
+  "custom": {
+    "modmenu": { "links": { "mod.ranched.contact.discord": "https://discord.moddingplayground.net" } }
+  },
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.moddingplayground.ranched.impl.RanchedImpl"
+    ]
+  },
+  "mixins": [ "ranched.mixins.json" ],
+
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=1.18.2",
+    "fabricloader": ">=0.13",
+    "fabric": ">=0.48",
+    "frame": ">=0.16"
+  }
+}
