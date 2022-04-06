@@ -1,4 +1,9 @@
 {
   "mod.ranched.name": "Ranched",
-  "mod.ranched.contact.discord": "Discord"
+  "mod.ranched.contact.discord": "Discord",
+
+  "itemGroup.ranched.item_group": "Ranched",
+
+  "block.ranched.thatch_block": "Thatch Block",
+  "block.ranched.thatch": "Thatch"
 }

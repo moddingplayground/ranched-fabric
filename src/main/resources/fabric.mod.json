@@ -27,8 +27,14 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.moddingplayground.ranched.impl.RanchedImpl"
+    "main":     [
+      "net.moddingplayground.ranched.impl.RanchedImpl",
+      "net.moddingplayground.ranched.impl.block.RanchedBlocksImpl"
+    ],
+    "toymaker": [ "net.moddingplayground.ranched.impl.data.RanchedToymakerImpl" ],
+
+    "client":   [
+      "net.moddingplayground.ranched.impl.client.RanchedClientImpl"
     ]
   },
   "mixins": [ "ranched.mixins.json" ],

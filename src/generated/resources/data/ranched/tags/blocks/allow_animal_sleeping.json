@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:grass_block",
+    "minecraft:podzol",
+    "minecraft:hay_block",
+    "minecraft:mycelium",
+    "minecraft:moss_block",
+    "ranched:thatch_block",
+    "ranched:thatch"
+  ]
+}

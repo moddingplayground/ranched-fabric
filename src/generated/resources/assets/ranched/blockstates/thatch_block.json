@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ranched:block/thatch_block"
+    }
+  }
+}
