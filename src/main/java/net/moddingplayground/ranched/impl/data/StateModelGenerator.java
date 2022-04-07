@@ -11,8 +11,7 @@ public class StateModelGenerator extends AbstractStateModelGenerator {
 
     @Override
     public void generate() {
-        this.cubeAlls(
-            THATCH_BLOCK
-        );
+        this.cubeAlls(THATCH_BLOCK);
+        this.add(THATCH, b -> this.randomRotationY(name(b), null));
     }
 }

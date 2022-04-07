@@ -9,7 +9,7 @@ import net.moddingplayground.frame.api.toymaker.v0.registry.generator.StateModel
 import net.moddingplayground.frame.api.toymaker.v0.registry.generator.TagGeneratorStore;
 import net.moddingplayground.ranched.api.Ranched;
 
-public class RanchedToymakerImpl implements Ranched, ToymakerEntrypoint {
+public final class RanchedToymakerImpl implements Ranched, ToymakerEntrypoint {
     @Override
     public void onInitializeToymaker() {
         ItemModelGeneratorStore.register(() -> new ItemModelGenerator(MOD_ID));

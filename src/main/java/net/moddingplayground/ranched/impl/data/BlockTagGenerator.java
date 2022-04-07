@@ -15,7 +15,6 @@ public class BlockTagGenerator extends AbstractTagGenerator<Block>{
 
     @Override
     public void generate() {
-
         this.add(RanchedBlockTags.ALLOW_ANIMAL_SLEEPING,
             GRASS_BLOCK,
             PODZOL,

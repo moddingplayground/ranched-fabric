@@ -2,7 +2,7 @@
   "parent": "ranched:recipes/root",
   "rewards": {
     "recipes": [
-      "ranched:thatch/thatch_undo"
+      "ranched:thatch/thatch_reverse"
     ]
   },
   "criteria": {
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "ranched:thatch/thatch_undo"
+        "recipe": "ranched:thatch/thatch_reverse"
       }
     }
   },

@@ -23,5 +23,4 @@ public class ItemModelGenerator extends AbstractItemModelGenerator {
             }
         }
     }
-
 }

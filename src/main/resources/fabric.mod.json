@@ -8,7 +8,7 @@
     "All Rights Reserved (Assets)"
   ],
 
-  "name": "Example",
+  "name": "Ranched",
   "icon": "assets/ranched/icon.png",
   "description": "A mod that encourages better care of your animals!",
 
@@ -21,23 +21,25 @@
     "sources": "https://github.com/moddingplayground/ranched-fabric",
     "issues": "https://github.com/moddingplayground/ranched-fabric/issues"
   },
-  "custom": {
-    "modmenu": { "links": { "mod.ranched.contact.discord": "https://discord.moddingplayground.net" } }
-  },
 
   "environment": "*",
   "entrypoints": {
-    "main":     [
+    "main": [
       "net.moddingplayground.ranched.impl.RanchedImpl",
       "net.moddingplayground.ranched.impl.block.RanchedBlocksImpl"
     ],
-    "toymaker": [ "net.moddingplayground.ranched.impl.data.RanchedToymakerImpl" ],
+    "client": [
+      "net.moddingplayground.ranched.impl.client.RanchedClientImpl",
+      "net.moddingplayground.ranched.impl.client.block.RanchedBlocksClientImpl"
+    ],
 
-    "client":   [
-      "net.moddingplayground.ranched.impl.client.RanchedClientImpl"
-    ]
+    "toymaker": [ "net.moddingplayground.ranched.impl.data.RanchedToymakerImpl" ]
   },
   "mixins": [ "ranched.mixins.json" ],
+
+  "custom": {
+    "modmenu": { "links": { "mod.ranched.contact.discord": "https://discord.moddingplayground.net" } }
+  },
 
   "depends": {
     "java": ">=17",

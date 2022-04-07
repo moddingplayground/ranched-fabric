@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ranched:block/thatch"
+      },
+      {
+        "model": "ranched:block/thatch",
+        "y": 90
+      },
+      {
+        "model": "ranched:block/thatch",
+        "y": 180
+      },
+      {
+        "model": "ranched:block/thatch",
+        "y": 270
+      }
+    ]
+  }
+}

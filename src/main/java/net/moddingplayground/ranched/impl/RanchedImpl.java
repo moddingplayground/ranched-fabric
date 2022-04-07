@@ -2,8 +2,8 @@ package net.moddingplayground.ranched.impl;
 
 import com.google.common.reflect.Reflection;
 import net.fabricmc.api.ModInitializer;
-import net.moddingplayground.ranched.api.Ranched;
 import net.moddingplayground.frame.api.util.InitializationLogger;
+import net.moddingplayground.ranched.api.Ranched;
 import net.moddingplayground.ranched.api.block.RanchedBlocks;
 import net.moddingplayground.ranched.api.item.RanchedItemGroups;
 
