@@ -14,10 +14,13 @@ public class RecipeGenerator extends AbstractRecipeGenerator {
 
     @Override
     public void generate() {
-        this.add(b(THATCH) + p(THATCH), generic2x2(THATCH, THATCH_BLOCK, 1));
-        this.add(b(THATCH) + p(THATCH) + "_reverse", shapeless(THATCH_BLOCK, WHEAT, 4));
-        this.add(b(THATCH) + p(THATCH_BLOCK), generic2x1(WHEAT, THATCH, 2));
-        this.add(b(THATCH) + p(THATCH_BLOCK) + "_reverse", shapeless(THATCH, WHEAT, 1));
+        // thatch block
+        this.add(b(THATCH) + p(THATCH_BLOCK), generic2x2(THATCH, THATCH_BLOCK, 1));
+        this.add(b(WHEAT) + p(WHEAT) + "_from_" + p(THATCH_BLOCK), shapeless(THATCH_BLOCK, WHEAT, 4).group(p(WHEAT)));
+
+        // thatch
+        this.add(b(THATCH) + p(THATCH), generic2x1(WHEAT, THATCH, 2));
+        this.add(b(WHEAT) + p(WHEAT) + "_from_" + p(THATCH), shapeless(THATCH, WHEAT, 1).group(p(WHEAT)));
     }
 
     public String b(String folder) {

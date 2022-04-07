@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "##",
     "##"
   ],
   "key": {
     "#": {
-      "item": "ranched:thatch"
+      "item": "minecraft:wheat"
     }
   },
   "result": {
-    "item": "ranched:thatch_block"
+    "item": "ranched:thatch",
+    "count": 2
   }
 }

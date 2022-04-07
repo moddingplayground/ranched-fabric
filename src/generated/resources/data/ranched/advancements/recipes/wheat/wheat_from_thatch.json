@@ -2,7 +2,7 @@
   "parent": "ranched:recipes/root",
   "rewards": {
     "recipes": [
-      "ranched:thatch/thatch_block_reverse"
+      "ranched:wheat/wheat_from_thatch"
     ]
   },
   "criteria": {
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "ranched:thatch/thatch_block_reverse"
+        "recipe": "ranched:wheat/wheat_from_thatch"
       }
     }
   },
