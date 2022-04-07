@@ -1,6 +1,7 @@
 package net.moddingplayground.ranched.impl.data;
 
 import net.minecraft.block.Block;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.util.registry.Registry;
 import net.moddingplayground.frame.api.toymaker.v0.generator.tag.AbstractTagGenerator;
 import net.moddingplayground.ranched.api.tag.RanchedBlockTags;
@@ -30,5 +31,9 @@ public class BlockTagGenerator extends AbstractTagGenerator<Block>{
             THATCH
         );
 
+        this.add(BlockTags.HOE_MINEABLE,
+            THATCH_BLOCK,
+            THATCH
+        );
     }
 }
